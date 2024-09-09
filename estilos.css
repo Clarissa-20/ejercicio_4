@@ -1,0 +1,64 @@
+/* Estilos básicos para centrar el contenido y darle estilo */
+body {
+    font-family: 'Orbitron', sans-serif; /* Fuente robótica y futurista */
+    background-color: #0e0f12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Título de la página con estilo robótico */
+h1 {
+    color: #00e0ff;
+    text-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Contenedor de los números */
+.numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background-color: #1a1b20;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    border: 2px solid #00e0ff;
+}
+
+/* Estilo de cada caja de número */
+.number-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #26272b;
+    color: #00ffcc;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid #00e0ff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00e0ff, 0 0 15px #00e0ff inset;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover para agrandar y cambiar el color de fondo */
+.number-box:hover {
+    transform: scale(1.2);
+    background-color: #00ffcc;
+    color: #0e0f12;
+    box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc inset;
+}
+
+/* Efecto de transición en las cajas al pasar el ratón */
+.number-box:active {
+    transform: scale(1.15);
+    background-color: #00e0ff;
+    box-shadow: 0 0 15px #00e0ff, 0 0 25px #00e0ff inset;
+}
